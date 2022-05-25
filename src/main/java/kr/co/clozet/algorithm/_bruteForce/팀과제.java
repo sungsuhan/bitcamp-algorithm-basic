@@ -1,27 +1,26 @@
-package kr.co.clozet.algorithm;
+package kr.co.clozet.algorithm._bruteForce;
 
 import java.util.Scanner;
-
 /**
- * packageName:kr.co.clozet.common.algorithm
- * fileName        :Q3_Team.java
+ * packageName:kr.co.clozet.algorithm._bruteForce
+ * fileName        :팀과제.java
  * author          : sungsuhan
- * date            :2022-05-09
+ * date            :2022-05-25
  * desc            :
  * =============================================
  * DATE              AUTHOR        NOTE
  * =============================================
- * 2022-05-09           sungsuhan      최초 생성
+ * 2022-05-25           sungsuhan      최초 생성
  **/
-public class Q3_Team {
+public class 팀과제 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         while (true){
             System.out.println("1.팀별 과제 2.팀장이 맡은 과제 3.큐를 담당한 사람 4.팀원별 과제 수");
             String[] arr = {"김승현",           "김윤섭",        "최민서",        "한성수",
-                            "Sort",             "Stack",        "Hash",        "Heap",
-                            "Binary Search",    "Queue",        "Graph",       "DFS",
-                            "Brute Force",       "DP",         "Greedy",       "BFS"};
+                    "Sort",             "Stack",        "Hash",        "Heap",
+                    "Binary Search",    "Queue",        "Graph",       "DFS",
+                    "Brute Force",       "DP",         "Greedy",       "BFS"};
             switch (scanner.next()){
                 case "1": teamSubject(arr); break;
                 case "2": teamLeaderSubject(arr); break;
@@ -89,7 +88,4 @@ public class Q3_Team {
         }
 
     }
-
-
-
 }
